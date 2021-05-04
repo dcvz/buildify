@@ -1,0 +1,70 @@
+version: 2
+updates:
+  - package-ecosystem: bundler
+    directory: "/projects/runner"
+    labels:
+      - dependencies
+      - automerge
+    schedule:
+      interval: monthly
+      time: "04:00"
+    open-pull-requests-limit: 10
+  - package-ecosystem: bundler
+    directory: "/projects/cli"
+    labels:
+      - dependencies
+      - automerge
+    schedule:
+      interval: monthly
+      time: "04:00"
+    open-pull-requests-limit: 10
+  - package-ecosystem: bundler
+    directory: "/projects/app"
+    labels:
+      - dependencies
+      - automerge
+    schedule:
+      interval: monthly
+      time: "04:00"
+    open-pull-requests-limit: 10
+  - package-ecosystem: npm
+    directory: "/projects/app"
+    schedule:
+      interval: monthly
+      time: "04:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - pepibumur
+    labels:
+      - dependencies
+      - automerge
+    ignored_updates:
+      - match:
+          dependency_name: "postcss*"
+      - match:
+          dependency_name: "autoprefixer*"
+  - package-ecosystem: npm
+    directory: "/projects/website"
+    schedule:
+      interval: monthly
+      time: "04:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - pepibumur
+    labels:
+      - dependencies
+      - automerge
+    ignored_updates:
+      - match:
+          dependency_name: "postcss*"
+      - match:
+          dependency_name: "autoprefixer*"
+  - package-ecosystem: bundler
+    directory: "/projects/toolkit"
+    labels:
+      - dependencies
+      - automerge
+    schedule:
+      interval: monthly
+      time: "04:00"
+    open-pull-requests-limit: 10

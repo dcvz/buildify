@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "orta.vscode-jest",
+    "editorconfig.editorconfig",
+    "apollographql.vscode-apollo",
+    "blodwynn.featurehighlight",
+    "silvenon.mdx"
+  ]
+}

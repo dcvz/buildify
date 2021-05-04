@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
+require "pathname"
+
+# Load Bundler dependencies
+require "bundler/setup"
+
+# Load toolkit's directory
+toolkit_directory = File.expand_path("../lib", __dir__)
+$LOAD_PATH.unshift(toolkit_directory) unless $LOAD_PATH.include?(toolkit_directory)
+
+# Load Fourier
+require "toolkit"
+
+Toolkit::CLI.start(ARGV)
