@@ -14,7 +14,7 @@ module Toolkit
         end
 
         def call
-          Dir.chdir(Constants::ROOT_DIRECTORY) do
+          Dir.chdir(Constants::Directories::ROOT) do
             Utilities::System.system(arguments.join(" "))
           end
         end
@@ -22,10 +22,10 @@ module Toolkit
         private
 
           def arguments
-            lib_directory = File.expand_path("lib", Constants::TOOLKIT_DIRECTORY)
-            test_directory = File.expand_path("test", Constants::TOOLKIT_DIRECTORY)
+            lib_directory = File.expand_path("lib", Constants::Directories::TOOLKIT)
+            test_directory = File.expand_path("test", Constants::Directories::TOOLKIT)
             test_paths = if @test.nil?
-                           Dir.glob(File.join(Constants::TOOLKIT_DIRECTORY, "test/**/*_test.rb"))
+                           Dir.glob(File.join(Constants::Directories::TOOLKIT, "test/**/*_test.rb"))
                          else
                            @test
                          end
