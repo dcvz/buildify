@@ -2,7 +2,10 @@
 
 module Toolkit
   module Constants
-    ROOT_DIRECTORY = File.expand_path("../../../..", __dir__)
-    TOOLKIT_DIRECTORY = File.expand_path("projects/toolkit", ROOT_DIRECTORY)
+    module Directories
+      ROOT = File.expand_path("../../../..", __dir__)
+      TOOLKIT = File.expand_path("projects/toolkit", ROOT)
+      CLI = File.expand_path("projects/cli", ROOT)
+    end
   end
 end

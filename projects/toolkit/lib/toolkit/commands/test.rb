@@ -7,6 +7,11 @@ module Toolkit
       def toolkit(test = nil)
         Services::Test::Toolkit.call(test: test)
       end
+
+      desc "cli", "Run the tests of the Buildify's CLI"
+      def cli
+        Services::Test::CLI.call
+      end
     end
   end
 end

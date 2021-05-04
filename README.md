@@ -15,11 +15,15 @@ Buildify is a modern open-source deployment tool built by a non-profit organizat
 | [website](/projects/website) | [![Website](https://github.com/buildifydev/buildify/actions/workflows/website.yml/badge.svg)](https://github.com/buildifydev/buildify/actions/workflows/website.yml) | [![Netlify Status](https://api.netlify.com/api/v1/badges/94082320-b667-45eb-a1cd-59ac49a67b83/deploy-status)](https://app.netlify.com/sites/buildify-website/deploys) | [https://buildify.dev](https://buildify.dev)          |
 | [docs](/projects/docs)       | [![Docs](https://github.com/buildifydev/buildify/actions/workflows/docs.yml/badge.svg)](https://github.com/buildifydev/buildify/actions/workflows/docs.yml)          | [![Netlify Status](https://api.netlify.com/api/v1/badges/db6cd641-9035-417e-b5f4-bfb239607006/deploy-status)](https://app.netlify.com/sites/buildify-docs/deploys)    | [https://docs.buildify.dev](https://app.buildify.dev) |
 
+# Environment requirements
+
+- Ruby: 3.0.1
+- Node: 16.x
+- Cargo (Rust)
+
 ## Setup
 
 1. Clone the project `git clone git@github.com:buildifydev/buildify.git`.
-2. Ensure you are using the Ruby version specified in the file`.ruby-version`.
-3. Ensure you are using the Node version specified in `.nvmrc`.
-4. Install [shadowenv](https://github.com/Shopify/shadowenv) and trust the environment.
-5. Run `bundle install --gemfile=projects/toolkit/Gemfile`.
-6. Run `toolkit up`.
+2. Install [shadowenv](https://github.com/Shopify/shadowenv) and trust the environment.
+3. Run `bundle install --gemfile=projects/toolkit/Gemfile`.
+4. Run `toolkit up`.
