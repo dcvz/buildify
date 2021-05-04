@@ -2,7 +2,7 @@
 
 # Buildify
 
-Buildify is a modern open-source deployment tool built by a non-profit organization.
+Buildify is a modern open-source deployment tool built by a non-profit organization. The tool is inspired by proprietary tools like [Heroku](https://heroku.com), [Vercel](https://vercel.com), [Netlify](https://netlify.com), and open-source solutions like [Shipit](https://github.com/Shopify/shipit-engine). It's designed to conceptually compress the intricacies of releasing software to help developers focus on building their apps.
 
 ## Projects
 
