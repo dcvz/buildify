@@ -2,7 +2,7 @@
 
 # Buildify
 
-Buildify is a modern open-source deployment tool that runs in your infrastructure. This repository is a monorepo that contains the following projects:
+Buildify is a modern open-source deployment tool built by a non-profit organization.
 
 ## Setup
 
