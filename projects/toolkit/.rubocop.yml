@@ -13,7 +13,7 @@ Layout/IndentationConsistency:
   EnforcedStyle: indented_internal_methods
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 3.0
   DisplayCopNames: true
   DisplayStyleGuide: true
   Exclude:

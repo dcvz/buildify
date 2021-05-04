@@ -8,7 +8,7 @@ module Toolkit
       class Toolkit < Base
         attr_reader :test
 
-        def initialize(test:)
+        def initialize(test: nil)
           @test = test
         end
 
