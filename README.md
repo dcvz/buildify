@@ -13,6 +13,7 @@ Buildify is a modern open-source deployment tool built by a non-profit organizat
 | [runner](/projects/runner)   | [![Runner](https://github.com/buildifydev/buildify/actions/workflows/runner.yml/badge.svg)](https://github.com/buildifydev/buildify/actions/workflows/runner.yml)    |                                                                                                                                                                       |
 | [toolkit](/projects/toolkit) | [![Toolkit](https://github.com/buildifydev/buildify/actions/workflows/toolkit.yml/badge.svg)](https://github.com/buildifydev/buildify/actions/workflows/toolkit.yml) |                                                                                                                                                                       |
 | [website](/projects/website) | [![Website](https://github.com/buildifydev/buildify/actions/workflows/website.yml/badge.svg)](https://github.com/buildifydev/buildify/actions/workflows/website.yml) | [![Netlify Status](https://api.netlify.com/api/v1/badges/94082320-b667-45eb-a1cd-59ac49a67b83/deploy-status)](https://app.netlify.com/sites/buildify-website/deploys) |
+| [docs](/projects/docs)       | [![Docs](https://github.com/buildifydev/buildify/actions/workflows/docs.yml/badge.svg)](https://github.com/buildifydev/buildify/actions/workflows/docs.yml)          | [![Netlify Status](https://api.netlify.com/api/v1/badges/db6cd641-9035-417e-b5f4-bfb239607006/deploy-status)](https://app.netlify.com/sites/buildify-docs/deploys)    |
 
 ## Setup
 
