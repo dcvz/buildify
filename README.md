@@ -4,6 +4,12 @@
 
 Buildify is a modern open-source deployment tool built by a non-profit organization.
 
+## Projects
+
+| Project              | CI                                                                                                                                                       | Deployment |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| [app](/projects/app) | [![App](https://github.com/buildifydev/buildify/actions/workflows/app.yml/badge.svg)](https://github.com/buildifydev/buildify/actions/workflows/app.yml) |            |
+
 ## Setup
 
 1. Clone the project `git clone git@github.com:buildifydev/buildify.git`.
