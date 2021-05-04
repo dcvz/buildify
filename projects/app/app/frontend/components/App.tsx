@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react";
 import ErrorTracking from "./ErrorTracking";
-import { ThemeProvider } from "theme-ui";
+import { ThemeProvider, jsx } from "theme-ui";
 import theme from "../style/theme";
 
 const App = () => {

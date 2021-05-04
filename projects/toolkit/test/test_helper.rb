@@ -10,7 +10,7 @@ require "tmpdir"
 require "tempfile"
 require "byebug"
 
-Dir.glob(File.join(__dir__, "test_helpers/*")).each { |f| require(f) }
+Dir.glob(File.join(__dir__, "test_helpers/*")).sort.each { |f| require(f) }
 
 require "minitest/autorun"
 require "minitest/unit"

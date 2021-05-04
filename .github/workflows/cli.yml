@@ -4,53 +4,31 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    paths:
-      - projects/cli/**
-      - .github/workflows/cli.yml
+  pull_request: {}
 
-env:
-  RUBY_VERSION: "2.7.2"
 jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - uses: actions-rs/cargo@v1
+        with:
+          command: build
+          use-cross: true
+          args: --release --all-features --manifest-path projects/cli/Cargo.toml
   test:
     name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions-rs/toolchain@v1
         with:
-          bundler-cache: true
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Install dependencies
-        working-directory: projects/cli
-        run: |
-          sudo apt-get -yqq install libpq-dev
-          gem install bundler
-          bundle config path vendor/bundle
-          bundle install --jobs=4 --retry=3
-      - name: Run tests
-        working-directory: projects/cli
-        run: |
-          bundle exec rake test
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+          toolchain: stable
+      - uses: actions-rs/cargo@v1
         with:
-          bundler-cache: true
-          ruby-version: ${{ env.RUBY_VERSION }}
-      - name: Install dependencies
-        working-directory: projects/cli
-        run: |
-          sudo apt-get -yqq install libpq-dev
-          gem install bundler
-          bundle config path vendor/bundle
-          bundle install --jobs=4 --retry=3
-      - name: Lint Ruby
-        working-directory: projects/cli
-        run: |
-          bundle exec rubocop
+          command: test
+          args: --manifest-path projects/cli/Cargo.toml

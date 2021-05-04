@@ -1,10 +1,11 @@
-
 # frozen_string_literal: true
 
 module Toolkit
   module Commands
     class Base < Thor
+      # rubocop:disable Style/OptionalBooleanParameter
       def self.banner(command, _namespace = nil, _subcommand = false)
+        # rubocop:enable Style/OptionalBooleanParameter
         "#{basename} #{subcommand_prefix} #{command.usage}"
       end
 

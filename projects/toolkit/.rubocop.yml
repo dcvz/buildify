@@ -1,21 +1,4 @@
-inherit_gem:
-  rubocop-rails_config:
-    - config/rails.yml
+inherit_from: "../../.rubocop.yml"
 
-Style/ClassAndModuleChildren:
+Style/Documentation:
   Enabled: false
-Style/RedundantBegin:
-  Enabled: false
-
-Layout/LineLength:
-  Max: 200
-Layout/IndentationConsistency:
-  EnforcedStyle: indented_internal_methods
-
-AllCops:
-  TargetRubyVersion: 2.5
-  DisplayCopNames: true
-  DisplayStyleGuide: true
-  Exclude:
-    - vendor/**/*
-    - bin/**/*
