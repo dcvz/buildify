@@ -1,6 +1,6 @@
 ---
 title: "Toolkit"
-slug: "/docs/contributors/toolkit"
+slug: "/contributors/toolkit"
 ---
 
 With the goal of easing external contributions to the project,
@@ -12,7 +12,7 @@ it ensures we use workflows consistently across local and CI environments.
 
 To use the tool, you need to install its dependencies using [Bundler](https://bundler.io/).
 You can do it by running the following command in the root of the repository.
-Make sure you have the Ruby version specified in the [environment page](/docs/contributors/environment).
+Make sure you have the Ruby version specified in the [environment page](/contributors/environment).
 
 ```bash
 bundle install --gemfile=projects/toolkit/Gemfile

@@ -5,7 +5,7 @@ module Toolkit
     class Build < Base
       desc "cli", "Build Buildify's CLI"
       def cli
-        Services::Build::CLI.call()
+        Services::Build::CLI.call
       end
     end
   end
