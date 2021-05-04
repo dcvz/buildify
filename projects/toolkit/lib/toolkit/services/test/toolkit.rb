@@ -9,8 +9,8 @@ module Toolkit
         attr_reader :test
 
         def initialize(test: nil)
-          super
           @test = test
+          super()
         end
 
         def call
@@ -21,18 +21,18 @@ module Toolkit
 
         private
 
-        def arguments
-          lib_directory = File.expand_path("lib", Constants::TOOLKIT_DIRECTORY)
-          test_directory = File.expand_path("test", Constants::TOOLKIT_DIRECTORY)
-          test_paths = if @test.nil?
-                         Dir.glob(File.join(Constants::TOOLKIT_DIRECTORY, "test/**/*_test.rb"))
-                       else
-                         @test
-                       end
-          [
-            "ruby", "-I#{lib_directory}", "-I#{test_directory}", "-e \"ARGV.each {|f| require f}\"", *test_paths
-          ]
-        end
+          def arguments
+            lib_directory = File.expand_path("lib", Constants::TOOLKIT_DIRECTORY)
+            test_directory = File.expand_path("test", Constants::TOOLKIT_DIRECTORY)
+            test_paths = if @test.nil?
+                           Dir.glob(File.join(Constants::TOOLKIT_DIRECTORY, "test/**/*_test.rb"))
+                         else
+                           @test
+                         end
+            [
+              "ruby", "-I#{lib_directory}", "-I#{test_directory}", "-e \"ARGV.each {|f| require f}\"", *test_paths
+            ]
+          end
       end
     end
   end
