@@ -9,10 +9,11 @@ on:
       - projects/cli/**
       - .github/workflows/cli.yml
 
-env:
-  RUBY_VERSION: "3.0.1"
 jobs:
   test:
+    strategy:
+      matrix:
+        RUBY_VERSION: ["2.7.0", "3.0.1"]
     name: Test
     runs-on: ubuntu-latest
     steps:
@@ -21,7 +22,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: ${{ env.RUBY_VERSION }}
+          ruby-version: ${{ matrix.RUBY_VERSION }}
       - name: Install dependencies
         working-directory: projects/cli
         run: |
@@ -36,13 +37,16 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        RUBY_VERSION: ["2.7.0", "3.0.1"]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: ${{ env.RUBY_VERSION }}
+          ruby-version: ${{ matrix.RUBY_VERSION }}
       - name: Install dependencies
         working-directory: projects/cli
         run: |
