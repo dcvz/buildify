@@ -6,7 +6,7 @@ Buildify is a modern open-source deployment tool that runs in your infrastructur
 
 ## Setup
 
-1. Clone the project `git clone git@github.com:buildify/buildify.git`.
+1. Clone the project `git clone git@github.com:buildifydev/buildify.git`.
 2. Ensure you are using the Ruby version specified in the file`.ruby-version`.
 3. Ensure you are using the Node version specified in `.nvmrc`.
 4. Install [shadowenv](https://github.com/Shopify/shadowenv) and trust the environment.
