@@ -1,28 +1,38 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
+const remarkEmoji = require("remark-emoji");
+const remarkExternalLinks = require("remark-external-links");
+
 module.exports = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Buildify's Documentation",
+  tagline: "Documentation about how to use and contribute to the tool.",
+  url: "https://docs.buildify.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "buildifydev",
+  projectName: "buildify",
+  customFields: {
+    defaultDocsLandingPage: "contributors/environment",
+  },
   themeConfig: {
+    prism: {
+      additionalLanguages: ["swift", "ruby"],
+      theme: require("prism-react-renderer/themes/dracula"),
+    },
+    algolia: {
+      apiKey: "dev",
+      indexName: "dev",
+      contextualSearch: true,
+      searchParameters: {},
+    },
     navbar: {
-      title: "My Site",
+      title: "Buildify",
       logo: {
-        alt: "My Site Logo",
+        alt: "Buildify Logo",
         src: "img/logo.svg",
       },
       items: [
-        {
-          type: "doc",
-          docId: "contributors/toolkit",
-          position: "left",
-          label: "Documentation",
-        },
         {
           href: "https://github.com/buildifydev/buildify",
           label: "GitHub",
@@ -37,8 +47,8 @@ module.exports = {
           title: "Docs",
           items: [
             {
-              label: "Documentation",
-              to: "/docs/contributors/toolkit",
+              label: "Getting Started",
+              to: "/",
             },
           ],
         },
@@ -46,16 +56,12 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
+              label: "GitHub Discussions",
               href: "https://stackoverflow.com/questions/tagged/docusaurus",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://twitter.com/buildifydev",
             },
           ],
         },
@@ -63,34 +69,26 @@ module.exports = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "buildify.dev",
+              to: "https://buildify.dev",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Buildify, Inc. Built with Docusaurus.`,
     },
   },
+  plugins: [],
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+            "https://github.com/buildifydev/buildify/blob/main/projects/docs/",
+          remarkPlugins: [remarkEmoji, remarkExternalLinks],
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
