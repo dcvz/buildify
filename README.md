@@ -24,3 +24,5 @@ Buildify is a modern open-source deployment tool built by a non-profit organizat
 
 1. Clone the project `git clone git@github.com:buildifydev/buildify.git`.
 2. Install [shadowenv](https://github.com/Shopify/shadowenv) and trust the environment.
+3. Install Rust: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+4. Set the Nightly Rust version as the default: `rustup default nightly`

@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - main
-  pull_request: {}
+  pull_request:
+    paths:
+      - projects/cli/**
+      - .github/workflows/cli.yml
 
 jobs:
   build:
