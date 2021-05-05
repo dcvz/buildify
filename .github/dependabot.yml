@@ -59,12 +59,3 @@ updates:
           dependency_name: "postcss*"
       - match:
           dependency_name: "autoprefixer*"
-  - package-ecosystem: bundler
-    directory: "/projects/toolkit"
-    labels:
-      - dependencies
-      - automerge
-    schedule:
-      interval: monthly
-      time: "04:00"
-    open-pull-requests-limit: 10
