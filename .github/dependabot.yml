@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: bundler
+  - package-ecosystem: cargo
     directory: "/projects/runner"
     labels:
       - dependencies
@@ -9,7 +9,7 @@ updates:
       interval: monthly
       time: "04:00"
     open-pull-requests-limit: 10
-  - package-ecosystem: bundler
+  - package-ecosystem: cargo
     directory: "/projects/cli"
     labels:
       - dependencies
