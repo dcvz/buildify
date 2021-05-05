@@ -1,5 +1,5 @@
 [package]
-name = "buildify"
+name = "buildify-runner"
 version = "0.1.0"
 authors = ["Pedro Piñera <pedro@buildify.dev>"]
 edition = "2018"
