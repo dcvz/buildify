@@ -8,7 +8,7 @@ loader.push_dir(__dir__)
 loader.inflector.inflect "cli" => "CLI"
 loader.setup
 
-module Toolkit
+module Chimera
   class CLI < Thor
     desc "test", "Run tests"
     subcommand "test", Commands::Test

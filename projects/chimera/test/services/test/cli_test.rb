@@ -2,19 +2,19 @@
 
 require "test_helper"
 
-module Toolkit
+module Chimera
   module Services
-    module Build
+    module Test
       class CLITest < TestCase
         def test_call
           # Given
           manifest_path = File.expand_path("Cargo.toml", Constants::Directories::CLI)
           Utilities::System
             .expects(:system)
-            .with("cargo", "build", "--manifest-path", manifest_path)
+            .with("cargo", "test", "--manifest-path", manifest_path)
 
           # When/then
-          Services::Build::CLI.call
+          Services::Test::CLI.call
         end
       end
     end

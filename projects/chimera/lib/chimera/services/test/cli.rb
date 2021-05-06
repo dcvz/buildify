@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Toolkit
+module Chimera
   module Services
     module Test
       class CLI < Base

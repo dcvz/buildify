@@ -2,10 +2,10 @@
 
 require "rake/testtask"
 
-module Toolkit
+module Chimera
   module Services
     module Test
-      class Toolkit < Base
+      class Chimera < Base
         attr_reader :test
 
         def initialize(test: nil)
@@ -22,10 +22,10 @@ module Toolkit
         private
 
           def arguments
-            lib_directory = File.expand_path("lib", Constants::Directories::TOOLKIT)
-            test_directory = File.expand_path("test", Constants::Directories::TOOLKIT)
+            lib_directory = File.expand_path("lib", Constants::Directories::CHIMERA)
+            test_directory = File.expand_path("test", Constants::Directories::CHIMERA)
             test_paths = if @test.nil?
-                           Dir.glob(File.join(Constants::Directories::TOOLKIT, "test/**/*_test.rb"))
+                           Dir.glob(File.join(Constants::Directories::CHIMERA, "test/**/*_test.rb"))
                          else
                            @test
                          end

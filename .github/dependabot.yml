@@ -60,7 +60,7 @@ updates:
       - match:
           dependency_name: "autoprefixer*"
   - package-ecosystem: bundler
-    directory: "/projects/toolkit"
+    directory: "/projects/chimera"
     labels:
       - dependencies
       - automerge

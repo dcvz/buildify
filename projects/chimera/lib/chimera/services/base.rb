@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Toolkit
+module Chimera
   module Services
     class Base
       def self.call(*args, **kwargs, &block)

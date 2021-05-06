@@ -9,11 +9,11 @@ require "pathname"
 # Load Bundler dependencies
 require "bundler/setup"
 
-# Load toolkit's directory
-toolkit_directory = File.expand_path("../lib", __dir__)
-$LOAD_PATH.unshift(toolkit_directory) unless $LOAD_PATH.include?(toolkit_directory)
+# Load chimera's directory
+chimera_directory = File.expand_path("../lib", __dir__)
+$LOAD_PATH.unshift(chimera_directory) unless $LOAD_PATH.include?(chimera_directory)
 
 # Load Fourier
-require "toolkit"
+require "chimera"
 
-Toolkit::CLI.start(ARGV)
+Chimera::CLI.start(ARGV)

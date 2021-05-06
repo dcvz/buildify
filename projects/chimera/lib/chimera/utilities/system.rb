@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Toolkit
+module Chimera
   module Utilities
     module System
       def self.system(*args)

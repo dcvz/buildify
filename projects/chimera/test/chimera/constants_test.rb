@@ -2,7 +2,7 @@
 
 require "test_helper"
 
-module Toolkit
+module Chimera
   class ConstantsTest < TestCase
     def test_it_works
       assert true
