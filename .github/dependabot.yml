@@ -38,11 +38,6 @@ updates:
     labels:
       - dependencies
       - automerge
-    ignored_updates:
-      - match:
-          dependency_name: "postcss*"
-      - match:
-          dependency_name: "autoprefixer*"
   - package-ecosystem: npm
     directory: "/projects/website"
     schedule:
@@ -54,11 +49,6 @@ updates:
     labels:
       - dependencies
       - automerge
-    ignored_updates:
-      - match:
-          dependency_name: "postcss*"
-      - match:
-          dependency_name: "autoprefixer*"
   - package-ecosystem: bundler
     directory: "/projects/chimera"
     labels:
