@@ -2030,10 +2030,10 @@ vite-plugin-full-reload@^0.2.1:
     chalk "^4.1"
     picomatch "^2.2.2"
 
-vite-plugin-ruby@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/vite-plugin-ruby/-/vite-plugin-ruby-2.0.1.tgz#24e1a04e1640dbee3f783e90696eeb157d4d8f6f"
-  integrity sha512-GtX6IXOAoC6XvpFr5MIXnVV0NoKOaM+qckC6iKM/aLNcqkSD3H5tyHmZKUnvMovxNfyWlZyo8vt1J1Ynfs7GdA==
+vite-plugin-ruby@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/vite-plugin-ruby/-/vite-plugin-ruby-2.0.3.tgz#7a0a196cc21d9c6b682960b1749c8a0c60eb1fc5"
+  integrity sha512-do1ClJcpyZQs5vahxa8VkukN3RwgdkcoRNEFrwUWPbfy/7ZaDMkQ3k0cRYxwTwyCyLnTCH2vy+SAvG+kOk19mA==
   dependencies:
     debug "^4.3.1"
     fast-glob "^3.2.4"
