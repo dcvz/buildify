@@ -1,16 +1,11 @@
-/** @jsx jsx */
 import React from "react";
 import ErrorTracking from "./ErrorTracking";
-import { ThemeProvider, jsx } from "theme-ui";
-import theme from "../style/theme";
+import "@shopify/polaris/dist/styles.css";
 
 const App = () => {
-  // @ts-ignore
   return (
     <ErrorTracking>
-      <ThemeProvider theme={theme}>
-        <div sx={{ bg: "red" }}>Hello it xxxxasdgas;</div>
-      </ThemeProvider>
+      <div>Work in progress</div>
     </ErrorTracking>
   );
 };

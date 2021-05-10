@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: "https://buildify.sh",
   },
   plugins: [
-    "gatsby-plugin-theme-ui",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
@@ -31,6 +30,25 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-plugin-next-seo",
+      options: {
+        title: "Buildify",
+        titleTemplate: "%s | Buildify",
+        description: "An open-source tool for releasing software",
+        openGraph: {
+          type: "website",
+          locale: "en_IE",
+          url: "https://buildify.dev/",
+          site_name: "Buildify",
+        },
+        twitter: {
+          handle: "@buildifydev",
+          site: "@buildifydev",
+          cardType: "summary",
+        },
+      },
     },
   ],
 };

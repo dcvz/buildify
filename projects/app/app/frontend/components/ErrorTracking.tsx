@@ -9,7 +9,7 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const ErrorTracking = ({ children }: Props): React.ReactNode => {
+const ErrorTracking = ({ children }: Props) => {
   let ErrorBoundary;
   if (bugsnagKey) {
     console.log(bugsnagKey);
@@ -21,7 +21,7 @@ const ErrorTracking = ({ children }: Props): React.ReactNode => {
     ErrorBoundary = Bugsnag.getPlugin("react").createErrorBoundary(React);
     return <ErrorBoundary>{children}</ErrorBoundary>;
   } else {
-    return children;
+    return <>{children}</>;
   }
 };
 
