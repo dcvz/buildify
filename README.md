@@ -33,3 +33,4 @@ Buildify is a modern open-source deployment tool built by a non-profit organizat
 - [StitchesJS](https://stitches.dev/)
 - [Polaris](https://polaris.shopify.com/)
 - [Slack group](https://join.slack.com/t/buildifydev/shared_invite/zt-q1ab0kza-nFfA1pLCkafi3_cU85yIRQ)
+- [Deno](https://deno.land/)
