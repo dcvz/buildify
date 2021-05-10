@@ -7,7 +7,7 @@ on:
   pull_request:
     paths:
       - projects/docs/**
-      - .github/workflows/website.yml
+      - .github/workflows/docs.yml
 
 env:
   NODE_VERSION: "14.16.0"
