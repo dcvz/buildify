@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: "https://buildify.sh",
   },
   plugins: [
-    "gatsby-plugin-theme-ui",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
