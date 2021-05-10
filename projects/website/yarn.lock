@@ -991,14 +991,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.13.10"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
-  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.10.3":
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.14.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
   integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
@@ -6082,10 +6075,10 @@ gatsby-plugin-page-creator@^3.4.1:
     globby "^11.0.3"
     lodash "^4.17.21"
 
-gatsby-plugin-sharp@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.4.1.tgz#5ada8704367136df3096888146af720ce385d90a"
-  integrity sha512-zPVe3s0NivQ8MwmujUUGZwyX1MhgBn3Zm0x8CtvLWEPGN9lqoqt+xKglkeRr7qmBEZJOMyge+viKPQyJPQOyDg==
+gatsby-plugin-sharp@^3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.4.2.tgz#ac7492d24595abeb6616e0192084a26083a36e71"
+  integrity sha512-0fr6Oemfj4DeRinisH6I1BVsMV6WujXNtS94FV+ayar6Cr8kdzl8rgwEiW7egXbHsG1xKnYnzQ0zQACT9S47AA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
