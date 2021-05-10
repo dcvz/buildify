@@ -49,6 +49,17 @@ updates:
     labels:
       - dependencies
       - automerge
+  - package-ecosystem: npm
+    directory: "/projects/docs"
+    schedule:
+      interval: monthly
+      time: "04:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - pepibumur
+    labels:
+      - dependencies
+      - automerge
   - package-ecosystem: bundler
     directory: "/projects/chimera"
     labels:
