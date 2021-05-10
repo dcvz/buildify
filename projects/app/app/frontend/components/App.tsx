@@ -5,7 +5,7 @@ import "@shopify/polaris/dist/styles.css";
 const App = () => {
   return (
     <ErrorTracking>
-      <div>Hello world</div>
+      <div>Work in progress</div>
     </ErrorTracking>
   );
 };
