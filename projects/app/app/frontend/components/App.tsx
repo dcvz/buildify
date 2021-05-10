@@ -1,12 +1,11 @@
 import React from "react";
 import ErrorTracking from "./ErrorTracking";
-import theme from "../style/theme";
+import "@shopify/polaris/dist/styles.css";
 
 const App = () => {
-  // @ts-ignore
   return (
     <ErrorTracking>
-      <div sx={{ bg: "red" }}>Hello it xxxxasdgas;</div>
+      <div>Hello world</div>
     </ErrorTracking>
   );
 };
