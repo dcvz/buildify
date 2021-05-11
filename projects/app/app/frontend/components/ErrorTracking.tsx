@@ -18,6 +18,7 @@ const ErrorTracking = ({ children }: Props) => {
       apiKey: bugsnagKey,
       plugins: [new BugsnagPluginReact()],
     });
+    // @ts-ignore
     ErrorBoundary = Bugsnag.getPlugin("react").createErrorBoundary(React);
     return <ErrorBoundary>{children}</ErrorBoundary>;
   } else {
