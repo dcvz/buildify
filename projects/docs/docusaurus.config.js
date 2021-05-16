@@ -34,7 +34,7 @@ module.exports = {
       },
       items: [
         {
-          href: "https://github.com/buildifydev/buildify",
+          href: "https://github.com/craftweg/buildify",
           label: "GitHub",
           position: "right",
         },
@@ -57,12 +57,11 @@ module.exports = {
           items: [
             {
               label: "GitHub Discussions",
-              href: "https://github.com/buildifydev/buildify/discussions",
+              href: "https://github.com/craftweg/buildify/discussions",
             },
             {
               label: "Slack",
-              href:
-                "https://join.slack.com/t/buildifydev/shared_invite/zt-q1ab0kza-nFfA1pLCkafi3_cU85yIRQ",
+              href: "https://join.slack.com/t/buildifydev/shared_invite/zt-q1ab0kza-nFfA1pLCkafi3_cU85yIRQ",
             },
             {
               label: "Twitter",
@@ -92,7 +91,7 @@ module.exports = {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            "https://github.com/buildifydev/buildify/blob/main/projects/docs/",
+            "https://github.com/craftweg/buildify/blob/main/projects/docs/",
           remarkPlugins: [remarkEmoji, remarkExternalLinks],
         },
         theme: {
