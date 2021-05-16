@@ -16,12 +16,19 @@ gem "sass-rails", ">= 6"
 gem "sidekiq", "~> 6.2"
 gem "turbolinks", "~> 5"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
-gem "devise", "~> 4.8"
 gem "dotenv-rails"
 gem "bugsnag", "~> 6.20"
 gem "vite_rails", "~> 2.0.10"
 gem "vite_plugin_legacy", "~> 0.5.5"
 gem "js_from_routes", "~> 2.0"
+
+# Authentication
+gem "devise", "~> 4.8"
+gem "omniauth-github", "~> 2.0"
+gem "omniauth-gitlab", "~> 3.0"
+gem "omniauth-twitter", "~> 1.4"
+gem "omniauth-apple", "~> 1.0"
+gem "omniauth", "~> 2.0"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]

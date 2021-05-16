@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   # Devise
-  devise_for :users
+  devise_for :users, :omniauthable, omniauth_providers: [:github, :gitlab, ]
 
   # Web app
   root to: "application#app"
