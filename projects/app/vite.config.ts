@@ -1,6 +1,4 @@
 import { defineConfig } from "vite";
-import fs from "fs";
-import path from "path";
 import RubyPlugin from "vite-plugin-ruby";
 import FullReload from "vite-plugin-full-reload";
 import ViteReact from "@vitejs/plugin-react-refresh";
@@ -13,7 +11,7 @@ const version = "0.1.0";
 const isDistEnv = process.env.RAILS_ENV === "production";
 
 const bugsnagOptions = {
-  apiKey: process.env.BUGSNAG_API_KEY,
+  apiKey: process.env.BUGSNAG_API_KEY || "",
   appVersion: version,
 };
 

@@ -2,7 +2,7 @@
   "name": "buildify-app",
   "private": true,
   "scripts": {
-    "type-check": "yarn tsc"
+    "type-check": "tsc"
   },
   "dependencies": {
     "@bugsnag/js": "^7.9.2",

@@ -1,13 +1,13 @@
 import * as React from "react";
 import { GatsbySeo } from "gatsby-plugin-next-seo";
+import HomeLayout from "../layouts/HomeLayout";
 
-// markup
 const IndexPage = () => {
   return (
-    <main>
+    <HomeLayout>
       <GatsbySeo titleTemplate="Buildify" />
-      <div>Work in progress</div>
-    </main>
+      It works
+    </HomeLayout>
   );
 };
 
