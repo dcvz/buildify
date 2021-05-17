@@ -16,7 +16,7 @@
     "@mdx-js/react": "^1.6.22",
     "@radix-ui/react-toolbar": "^0.0.11",
     "@stitches/react": "^0.1.9",
-    "gatsby": "^3.4.2",
+    "gatsby": "^3.5.0",
     "gatsby-plugin-image": "^1.4.1",
     "gatsby-plugin-manifest": "^3.5.0",
     "gatsby-plugin-mdx": "^2.5.0",
